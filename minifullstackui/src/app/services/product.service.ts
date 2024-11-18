@@ -9,24 +9,24 @@ import { Status } from '../models/status';
 })
 export class ProductService {
 
-  private baseUrl=environment.baseUrl+'/product';
+  private baseUrl=environment.baseUrl+'/products';
   constructor(private http:HttpClient) {
 
    }
 
    addUpdate(product:Product){
-    return this.http.post<Status>(this.baseUrl+'/addupdate',product);
+    return this.http.post<Status>(this.baseUrl,product);
    }
 
    getById(id:number){
-    return this.http.get<Product>(this.baseUrl+'/getbyid/'+id);
+    return this.http.get<Product>(this.baseUrl+'/'+id);
    }
 
    getAll(term:string=""){
-    return this.http.get<Product[]>(this.baseUrl+`/getall?term=${term}`);
+    return this.http.get<Product[]>(this.baseUrl+`/?term=${term}`);
    }
 
    delete(id:number){
-    return this.http.delete<Status>(this.baseUrl+'/delete/'+id);
+    return this.http.delete<Status>(this.baseUrl+'/'+id);
    }
 }

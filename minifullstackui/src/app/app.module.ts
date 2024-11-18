@@ -7,11 +7,15 @@ import { AddProductComponent } from './components/add-product/add-product.compon
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AddCategoryComponent } from './components/add-category/add-category.component';
+import { ListCategoryComponent } from './components/list-category/list-category.component';
 @NgModule({
   declarations: [
     AppComponent,
     AddProductComponent,
-    ListProductsComponent
+    ListProductsComponent,
+    AddCategoryComponent,
+    ListCategoryComponent
   ],
   imports: [
     BrowserModule,
