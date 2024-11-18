@@ -9,13 +9,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AddCategoryComponent } from './components/add-category/add-category.component';
 import { ListCategoryComponent } from './components/list-category/list-category.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     AddProductComponent,
     ListProductsComponent,
     AddCategoryComponent,
-    ListCategoryComponent
+    ListCategoryComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

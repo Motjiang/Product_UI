@@ -4,6 +4,7 @@ import { AddProductComponent } from './components/add-product/add-product.compon
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { AddCategoryComponent } from './components/add-category/add-category.component';
 import { ListCategoryComponent } from './components/list-category/list-category.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 const routes: Routes = [
   {
@@ -30,8 +31,7 @@ const routes: Routes = [
   },
   {
     path:'',
-    redirectTo:'/list-products',
-    pathMatch:'full'
+    component:HomePageComponent
   },
 ];
 
