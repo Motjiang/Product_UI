@@ -9,24 +9,24 @@ import { Status } from '../models/status';
 })
 export class CaegoryService {
 
-  private baseUrl=environment.baseUrl+'/category';
+  private baseUrl=environment.baseUrl+'/categories';
   constructor(private http:HttpClient) {
 
    }
 
    addUpdate(category:Category){
-    return this.http.post<Status>(this.baseUrl+'/addupdate',category);
+    return this.http.post<Status>(this.baseUrl,category);
    }
 
    getById(id:number){
-    return this.http.get<Category>(this.baseUrl+'/getbyid/'+id);
+    return this.http.get<Category>(this.baseUrl+'/'+id);
    }
 
    getAll(){
-    return this.http.get<Category[]>(this.baseUrl+'/getall');
+    return this.http.get<Category[]>(this.baseUrl);
    }
 
    delete(id:number){
-    return this.http.delete<Status>(this.baseUrl+'/delete/'+id);
+    return this.http.delete<Status>(this.baseUrl+'/'+id);
    }
 }
