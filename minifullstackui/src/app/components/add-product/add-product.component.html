@@ -3,13 +3,13 @@
       <form [formGroup]="frm" (ngSubmit)="onPost()">
         <input type="hidden" formControlName="id">
         <div class="mb-6">
-          <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product</label>
+          <label for="name"  class="block text-sm/6 font-medium text-gray-900 mb-2">Product</label>
           <input type="text" formControlName="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <p *ngIf="f['name'].invalid && (f['name'].dirty ||f['name'].touched )" class="mt-2 text-sm text-red-600 dark:text-red-500">Please fill this field</p>
         </div>
   
         <div class="mb-6">
-          <label for="categoryId" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+          <label for="categoryId"  class="block text-sm/6 font-medium text-gray-900 mb-2">Category</label>
           <select type="text"  formControlName="categoryId" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
              <option value="">--select--</option>
              <option *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</option>
@@ -18,7 +18,7 @@
         </div>
   
         <div class="mb-6">
-          <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
+          <label for="price"  class="block text-sm/6 font-medium text-gray-900 mb-2">Price</label>
           <input type="text" formControlName="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <p *ngIf="f['price'].invalid && (f['price'].dirty ||f['price'].touched )" class="mt-2 text-sm text-red-600 dark:text-red-500">Please fill this field</p>
         </div>
