@@ -1,6 +1,6 @@
 # Product Management System Application (Frontend)
 
-The **Product Management System Application** is a dynamic web application built with **Angular 16**. It is designed to simplify administrators' work by enabling them to manage products, categories, and their daily ToDo tasks. This application integrates seamlessly with the backend REST API built using **C#** and **.NET Core**.
+The **Product Management System Application** is a dynamic web application built with **Angular 16**. It is designed to simplify administrators' work by enabling them to manage products, categories. This application integrates seamlessly with the backend REST API built using **C#** and **.NET Core**.
 
 ---
 
